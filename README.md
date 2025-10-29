@@ -118,6 +118,7 @@ Found live chat ID: LIVE_CHAT_ID
 // config.js
 module.exports = {
     API_KEY: 'YOUR_API_KEY_HERE',
+    VIDEO_ID: '', // If this empty, the latest stream from the channel ID will be used
     CHANNEL_ID: 'UC...', // Channel ID YouTube
     HTTP_PORT: 3000, // HTTP server port
     WS_PORT: 8080, // WebSocket port
