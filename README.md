@@ -30,6 +30,27 @@ Versi terbaru dari [YouTube Live Chat Server](https://github.com/dipaadipati/yt-
 - **Node.js** v14+ (download dari https://nodejs.org/)
 - **YouTube API Key** (dari Google Cloud Console)
 
+## 📊 API Quota Usage
+
+### Estimasi Penggunaan API
+- **1 jam streaming** ≈ 1,672 tokens
+- **24 jam streaming** ≈ 40,128 tokens
+- **Quota limit per hari** = 10,000 tokens (free tier)
+
+### Rincian Penggunaan:
+```
+getCurrentLiveVideo: 100 tokens/request
+getLiveChatId:       1 token/request
+streamList:          1 token/request
+```
+
+> **Note:** Untuk continuous streaming 24 jam, disarankan menggunakan akun Google Cloud Platform berbayar karena free tier hanya mendapat 10,000 tokens per hari.
+
+### Tips Menghemat Quota:
+1. Hanya gunakan `VIDEO_ID` di `config.js` yang didapatkan dari `https://www.youtube.com/watch?v=VIDEO_ID_HERE`
+2. Jangan restart server jika tidak perlu
+3. Manfaatkan fitur auto-reconnect
+
 ## 📦 Installation
 
 ### Setup Node.js Server
