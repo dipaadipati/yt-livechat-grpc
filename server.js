@@ -38,6 +38,7 @@ const httpServer = http.createServer((req, res) => {
             }
             const emojis = {};
             files.forEach(file => {
+                if (file === '.gitkeep') return;
                 const ext = path.extname(file).toLowerCase();
                 const name = path.basename(file, ext);
                 const urlEncodedFile = encodeURIComponent(file);

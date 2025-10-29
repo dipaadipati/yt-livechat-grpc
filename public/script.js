@@ -94,8 +94,8 @@ function renderChats() {
             while ((match = emojiRegex.exec(msg)) !== null) {
                 result += msg.substring(lastIndex, match.index);
                 const emojiName = match[1];
-                if (emojis[`:${emojiName}:`]) {
-                    result += `<img class="chat-emoji" src="${emojis[`:${emojiName}:`]}" alt="emoji">`;
+                if (emojis[emojiName]) {
+                    result += `<img class="chat-emoji" src="${emojis[emojiName]}" alt="emoji">`;
                 } else {
                     result += match[0];
                 }

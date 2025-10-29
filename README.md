@@ -183,13 +183,13 @@ netstat -ano | findstr :3000
 3. Untuk member emoji:
    - Simpan file dengan nama persis seperti format di chat
    - Contoh: Jika di chat muncul `:_catdance:` 
-   - Simpan file dengan nama `:_catdance:.png`
+   - Simpan file dengan nama `_catdance.png`
 4. Struktur folder yang benar:
    ```
    emojis/
    ├── YT_emote1.webp           # Emoji biasa
-   ├── :_catdance:.png          # Member emoji
-   ├── :_pepehappy:.png         # Member emoji
+   ├── _catdance.png            # Member emoji
+   ├── _pepehappy.png           # Member emoji
    └── other_emoji.png          # Emoji biasa
    ```
 5. Cek di `/api/emojis` apakah emoji sudah ter-load:
